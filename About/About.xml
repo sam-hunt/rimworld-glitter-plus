@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+    <name>Glittertech Custom Extension Patch B18</name>
+    <author>shunter</author>
+    <url>https://github.com/sam-hunt/rimworld-glitter-plus</url>
+    <targetVersion>0.18.1722</targetVersion>
+    <description>Adds a few extra customizations to late-game glittertech. Version 0.1</description>
+</ModMetaData>
