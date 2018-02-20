@@ -1,10 +1,11 @@
-# rimworld-glitter-plus
-A custom extension to the B18 glittertech mod for Rimworld, A Scifi Colony Sim
+# Glittertech Plus Mod Extension
+A recustomization to parts of the [B18 glittertech mod](https://steamcommunity.com/sharedfiles/filedetails/?id=725576127) for Rimworld, A Scifi Colony Sim
 
 Currently:
-* Fixes glow effect on advanced power generator types.
-* Allows Orion exoskeleton implants onto Crystalloid-type xenos. Requires [mod](https://steamcommunity.com/sharedfiles/filedetails/?id=972897322).
+* Fixes glow effects on advanced power generator (previously light-blocking).
+* Allows Orion exoskeleton implants onto Crystalloid-type xenos. Depends on [mod](https://steamcommunity.com/sharedfiles/filedetails/?id=972897322).
 * Tweaks Glittertech recipe ingredient/product ratios for crafting silicon, computer components, magnetic coils, plasteel, titanium, a-poly, b-poly
+* Change plasma reactor graphic and glow from yellow to cool blue.
 
 Planned:
-* Change plasma reactor graphic and glow from yellow to cool blue.
+* Change robotic workbench graphic and glow from red to cool blue.
