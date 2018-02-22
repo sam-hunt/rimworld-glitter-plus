@@ -4,6 +4,7 @@
     <!--==================================PowerSource=====================================-->
 
     <!-- Only interested in properties here which are stopping the special advanced power generator glow effects... -->
+    <!-- So we'll patch only those defs rather than the whole file. -->
 
     <ThingDef ParentName="BuildingBase_GT">
         <defName>XenonIonTurbine</defName>
@@ -142,131 +143,6 @@
         <researchPrerequisites>
             <li>ElectroPlasmatics</li>
         </researchPrerequisites>
-    </ThingDef>
-
-    <!--==================================Batteries=====================================-->
-
-    <ThingDef ParentName="BuildingBase_GT">
-        <defName>FissionBattery</defName>
-        <label>Battery</label>
-        <thingClass>Building_Battery</thingClass>
-        <graphicData>
-            <texPath>Things/Building/Power/FissionBattery</texPath>
-            <graphicClass>Graphic_Single</graphicClass>
-            <drawSize>(2,2)</drawSize>
-            <damageData>
-                <cornerTL>Damage/Corner</cornerTL>
-                <cornerTR>Damage/Corner</cornerTR>
-                <cornerBL>Damage/Corner</cornerBL>
-                <cornerBR>Damage/Corner</cornerBR>
-            </damageData>
-        </graphicData>
-        <altitudeLayer>Building</altitudeLayer>
-        <passability>PassThroughOnly</passability>
-        <pathCost>70</pathCost>
-        <castEdgeShadows>true</castEdgeShadows>
-        <fillPercent>1</fillPercent>
-        <tickerType>Normal</tickerType>
-        <minifiedDef>MinifiedFurniture</minifiedDef>
-        <statBases>
-            <MaxHitPoints>100</MaxHitPoints>
-            <WorkToBuild>1200</WorkToBuild>
-            <Flammability>2.0</Flammability>
-            <Beauty>-6</Beauty>
-        </statBases>
-        <description>Stores electricity and recycles charge using fission processes. Slightly more efficient and stores four times as much. Warning - charged batteries tend to explode when heated or wet.</description>
-        <size>(2,2)</size>
-        <building>
-            <ai_chillDestination>false</ai_chillDestination>
-            
-        </building>
-        <costList>
-            <Steel>150</Steel>
-            <Uranium>1</Uranium>
-            <MagneticCoil>1</MagneticCoil>
-            <Component>4</Component>
-        </costList>
-        <comps>
-            <li Class="CompProperties_Battery">
-                <storedEnergyMax>4000</storedEnergyMax>
-                <efficiency>0.7</efficiency>
-                <startElectricalFires>true</startElectricalFires>
-                <transmitsPower>true</transmitsPower>
-            </li>
-            <li Class="CompProperties_Glower">
-                <glowRadius>12</glowRadius>
-                <glowColor>(0,162,255,0)</glowColor>
-            </li>
-            <li Class="CompProperties_Breakdownable"/>
-        </comps>
-        <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
-        <designationCategory>Power</designationCategory>
-        <staticSunShadowHeight>0.5</staticSunShadowHeight>
-        <constructEffect>ConstructMetal</constructEffect>
-        <researchPrerequisites>
-            <li>DynElect</li>
-        </researchPrerequisites>
-    </ThingDef>
-
-    <ThingDef ParentName="BuildingBase_GT">
-        <defName>HeavyPowerConduit</defName>
-        <label>heavy power conduit</label>
-        <thingClass>Building</thingClass>
-        <category>Building</category>
-        <graphicData>
-            <texPath>Things/Building/Linked/PowerConduit_Atlas</texPath>
-            <graphicClass>Graphic_Single</graphicClass>
-            <linkType>Transmitter</linkType>
-            <linkFlags>
-                <li>PowerConduit</li>
-            </linkFlags>
-            <damageData>
-                <rect>(0,0.35,1,0.3)</rect>
-            </damageData>
-        </graphicData>
-        <blueprintGraphicData>
-            <texPath>Things/Building/Linked/PowerConduit_Blueprint_Atlas</texPath>
-        </blueprintGraphicData>
-        <uiIconPath>Things/Building/Linked/PowerConduit_MenuIcon</uiIconPath>
-        <building>
-            <ai_chillDestination>false</ai_chillDestination>
-            <isInert>true</isInert>
-            
-            <isEdifice>false</isEdifice>
-        </building>
-        <altitudeLayer>FloorEmplacement</altitudeLayer>
-        <passability>Standable</passability>
-        <leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
-        <statBases>
-            <MaxHitPoints>350</MaxHitPoints>
-            <WorkToBuild>135</WorkToBuild>
-            <Flammability>0</Flammability>
-            <Beauty>-6</Beauty>
-        </statBases>
-        <description>A set of heavy electrical cables, very strong and non-flammable</description>
-        <placingDraggableDimensions>1</placingDraggableDimensions>
-        <costList>
-            <Steel>5</Steel>
-            <Titanium>1</Titanium>
-            <Silicon>2</Silicon>
-        </costList>
-        <comps>
-            <li Class="CompProperties_Power">
-                <compClass>CompPowerTransmitter</compClass>
-                <transmitsPower>true</transmitsPower>
-            </li>
-        </comps>
-        <placeWorkers>
-            <li>PlaceWorker_Conduit</li>
-        </placeWorkers>
-        <rotatable>false</rotatable>
-        <selectable>true</selectable>
-        <neverMultiSelect>true</neverMultiSelect>
-        <soundImpactDefault>BulletImpactMetal</soundImpactDefault>
-        <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
-        <designationCategory>Power</designationCategory>
-        <constructEffect>ConstructMetal</constructEffect>
-        <clearBuildingArea>false</clearBuildingArea>
     </ThingDef>
 
 </Defs>

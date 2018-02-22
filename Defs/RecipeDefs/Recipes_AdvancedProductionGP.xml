@@ -62,11 +62,11 @@
                         <li>Uranium</li>
                     </thingDefs>
                 </filter>
-                <count>3</count>
+                <count>10</count>
             </li>
         </ingredients>
         <products>
-            <AlphaPoly>10</AlphaPoly>
+            <AlphaPoly>30</AlphaPoly>
         </products>
         <fixedIngredientFilter>
             <thingDefs>
@@ -93,7 +93,7 @@
                         <li>AlphaPoly</li>
                     </thingDefs>
                 </filter>
-                <count>10</count>
+                <count>30</count>
             </li>
             <li>
                 <filter>
@@ -101,7 +101,7 @@
                         <li>Uranium</li>
                     </thingDefs>
                 </filter>
-                <count>3</count>
+                <count>10</count>
             </li>
             <li>
                 <filter>
@@ -113,7 +113,7 @@
             </li>
         </ingredients>
         <products>
-            <BetaPoly>5</BetaPoly>
+            <BetaPoly>30</BetaPoly>
         </products>
         <fixedIngredientFilter>
             <thingDefs>
@@ -242,11 +242,11 @@
                         <li>RawBerries</li>
                     </thingDefs>
                 </filter>
-                <count>20</count>
+                <count>30</count>
             </li>
         </ingredients>
         <products>
-            <Ethanol>5</Ethanol>
+            <Ethanol>10</Ethanol>
         </products>
         <fixedIngredientFilter>
             <thingDefs>
@@ -333,7 +333,7 @@
             </li>
         </ingredients>
         <products>
-            <ComputerComp>8</ComputerComp>
+            <ComputerComp>10</ComputerComp>
         </products>
         <fixedIngredientFilter>
             <thingDefs>
@@ -372,7 +372,7 @@
             </li>
         </ingredients>
         <products>
-            <MagneticCoil>5</MagneticCoil>
+            <MagneticCoil>8</MagneticCoil>
         </products>
         <fixedIngredientFilter>
             <thingDefs>

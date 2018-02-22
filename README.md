@@ -6,6 +6,4 @@ Currently:
 * Allows Orion exoskeleton implants onto Crystalloid-type xenos. Depends on [mod](https://steamcommunity.com/sharedfiles/filedetails/?id=972897322).
 * Tweaks Glittertech recipe ingredient/product ratios for crafting silicon, computer components, magnetic coils, plasteel, titanium, a-poly, b-poly
 * Change plasma reactor graphic and glow from yellow to cool blue.
-
-Planned:
 * Change robotic workbench graphic and glow from red to cool blue.

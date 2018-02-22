@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <!-- Patch only the robotic table glow in here. -->
+
+    <ThingDef ParentName="BuildingBase_GT">
+        <defName>RobAssem</defName>
+        <label>Robotic Assembler</label>
+        <thingClass>Building_WorkTable</thingClass>
+        <description>A machine that applies state of the art robotics, not jerry rigged with scrap metal, to construct machine Component too intricate for simple human hands.</description>
+        <graphicData>
+            <texPath>Things/Building/Production/RobAssem</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>(5,2)</drawSize>
+            <damageData>
+        <cornerTL>Damage/Corner</cornerTL>
+        <cornerTR>Damage/Corner</cornerTR>
+        <cornerBL>Damage/Corner</cornerBL>
+        <cornerBR>Damage/Corner</cornerBR>
+      </damageData>
+        </graphicData>
+        <constructEffect>ConstructMetal</constructEffect>
+        <costList>
+            <Steel>480</Steel>
+            <Titanium>120</Titanium>
+            <ComputerComp>12</ComputerComp>
+            <Component>12</Component>
+        </costList>
+        <altitudeLayer>Building</altitudeLayer>
+        <fillPercent>0.5</fillPercent>
+        <useHitPoints>True</useHitPoints>
+        <statBases>
+            <WorkToBuild>3000</WorkToBuild>
+            <MaxHitPoints>100</MaxHitPoints>
+            <Flammability>1.0</Flammability>
+        </statBases>
+        <size>(5,2)</size>
+        <designationCategory>Production</designationCategory>
+        <passability>Impassable</passability>
+        <hasInteractionCell>True</hasInteractionCell>
+        <interactionCellOffset>(0,0,-1)</interactionCellOffset>
+        <surfaceType>Item</surfaceType>
+        <recipes>
+            <li>BuildComputerComp</li>
+            <li>BuildMagneticCoil</li>
+            <li>BuildGlitterworldMedicine</li>
+        </recipes>
+        <inspectorTabs>
+            <li>ITab_Bills</li>
+        </inspectorTabs>
+        <comps>
+            <li Class="CompProperties_Power">
+                <compClass>CompPowerTrader</compClass>
+                <basePowerConsumption>1350</basePowerConsumption>
+                <startElectricalFires>true</startElectricalFires>
+            </li>
+            <li Class="CompProperties_Flickable"/>
+            <li Class="CompProperties_Breakdownable"/>
+            <li Class="CompProperties_Glower">
+                <glowRadius>10</glowRadius>
+                <glowColor>(0,162,255,0)</glowColor>
+            </li>
+        </comps>
+        <building>
+            <spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
+            <heatPerTickWhileWorking>0.5</heatPerTickWhileWorking>
+        </building>
+        <researchPrerequisites><li>RoboticEngineering</li></researchPrerequisites>
+    </ThingDef>
+
+</Defs>
